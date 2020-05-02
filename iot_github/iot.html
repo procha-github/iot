@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IOT GARAGEM</title>
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+</head>
+ <body>
+ <form action="fcall.php" method="POST">
+    
+	<section class="content">
+      <div class="swipe-element">
+        <div class="swipe-back">
+          <button class="button" name="RELAY_1_ON">ON</button>
+        </div>
+        <p class="swipe-front promote-layer">RELAY 1 ON</p>
+      </div>
+    </section>
+
+	<section class="content">
+      <div class="swipe-element">
+        <div class="swipe-back">
+          <button class="button" name="RELAY_1_OFF">OFF</button>
+        </div>
+        <p class="swipe-front promote-layer">RELAY 1 OFF</p>
+      </div>
+    </section>
+	
+	<section class="content">
+      <div class="swipe-element">
+        <div class="swipe-back">
+          <button class="button" name="RELAY_2_ON">ON</button>
+        </div>
+        <p class="swipe-front promote-layer">RELAY 2 ON</p>
+      </div>
+    </section>
+
+	<section class="content">
+      <div class="swipe-element">
+        <div class="swipe-back">
+          <button class="button" name="RELAY_2_OFF">OFF</button>
+        </div>
+        <p class="swipe-front promote-layer">RELAY 2 OFF</p>
+      </div>
+    </section>
+
+	<section class="content">
+      <div class="swipe-element">
+        <div class="swipe-back">
+          <button class="button" name="RELAY_3_ON">ON</button>
+        </div>
+        <p class="swipe-front promote-layer">RELAY 3 ON</p>
+      </div>
+    </section>
+
+	<section class="content">
+      <div class="swipe-element">
+        <div class="swipe-back">
+          <button class="button" name="RELAY_3_OFF">OFF</button>
+        </div>
+        <p class="swipe-front promote-layer">RELAY 3 OFF</p>
+      </div>
+    </section>
+
+	<section class="content">
+      <div class="swipe-element">
+        <div class="swipe-back">
+          <button class="button" name="RELAY_4_ON">ON</button>
+        </div>
+        <p class="swipe-front promote-layer">RELAY 4 ON</p>
+      </div>
+    </section>
+
+	<section class="content">
+      <div class="swipe-element">
+        <div class="swipe-back">
+          <button class="button" name="RELAY_4_OFF">OFF</button>
+        </div>
+        <p class="swipe-front promote-layer">RELAY 4 OFF</p>
+      </div>
+    </section>
+
+	<section class="content">
+      <div class="swipe-element">
+        <div class="swipe-back">
+          <button class="button" name="RELAY_OFF" onclick="myFunction()">OFF</button>
+        <p class="swipe-front promote-layer">👋 ALL RELAY</p>
+      </div>
+    </section>
+
+<p><var id="var_test">0</var></p>
+
+
+ <script type="text/javascript">
+        var popUpObj;
+        function showModalPopUp() {
+            popUpObj =   window.open("popup_modal.html",
+    "ModalPopUp",
+    "toolbar=no," +
+    "scrollbars=no," +
+    "location=no," +
+    "statusbar=no," +
+    "menubar=no," +
+    "resizable=0," +
+    "width=100," +
+    "height=100," +
+    "left = 490," +
+    "top=300"
+    );
+            popUpObj.focus();
+            LoadModalDiv();
+        }
+      
+    </script>
+
+    <script type="text/javascript">
+        function LoadModalDiv() {
+            var bcgDiv = document.getElementById("divBackground");
+            bcgDiv.style.display = "block";
+        }
+    </script>
+    <script type="text/javascript">
+        function HideModalDiv() {
+            var bcgDiv = document.getElementById("divBackground");
+            bcgDiv.style.display = "none";
+        }
+        function OnUnload() {
+            if (false == popUpObj.closed) {
+                popUpObj.close();
+            }
+        }
+        window.onunload = OnUnload;
+    </script>
+    
+    <div id="divBackground" style="position: fixed; z-index: 999; height: 100%; width: 100%;
+        top: 0; left:0; background-color: Black; filter: alpha(opacity=60); opacity: 0.6; -moz-opacity: 0.8;display:none">
+    </div>
+
+<script>
+function myFunction() {
+  var x =     document.getElementById("var_test");
+  x.style.color = "red";
+  showModalPopUp();
+}
+</script>
+
+	<script src="jquery_min.js"></script>
+    <script src="press_vibrate.js"></script>	
+    <script src="swipe.js"></script>
+    <script src="touch_swipe.js"></script>
+<!-- jQuery Modal --> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+</body>
+</html>

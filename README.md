@@ -11,7 +11,7 @@ With or without Nuvoton (command sent in HEX or STRING by PHP)
 
 # Screenshot:
 
-# Credits:
+# Credits and licenses:
 https://randomnerdtutorials.com/projects-esp8266/
 
 https://www.letscontrolit.com/

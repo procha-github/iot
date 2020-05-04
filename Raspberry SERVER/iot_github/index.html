@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IOT ACESSO</title>
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" type="text/css" href="style_modal.css"/>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2>ACESSO</h2>
+  </div>
+  <div class="modal-body">
+    <p></p>
+<form>
+<input class="entrar" type="button" value="ENTRAR" onclick="window.location.href='iot.html'"/>
+</form>
+	<p></p>
+  </div>
+  <div class="modal-footer">
+    <h3>Ligação com sucesso! 🔌</h3>
+  </div>
+</div>
+
+<script src="modal.js"></script>
+
+	
+<div id="consult"></div>
+
+<script>
+if(typeof(EventSource) !== "undefined") {
+  var source = new EventSource("sse.php");
+  source.onmessage = function(event) {
+    document.getElementById("consult").innerHTML += event.data + "<br>";
+  };
+} else {
+  document.getElementById("consult").innerHTML = "Sorry, your browser does not support server-sent events...";
+}
+</script> 
+</body>
+</html>

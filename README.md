@@ -6,9 +6,16 @@ ESP8266 (ESP01) 1 or 4 RELAYS
 With or without Nuvoton (command sent in HEX or STRING by PHP)
 
 # Installation:
+  Raspberry pi Zero is the server with Apache, Mysql or Postgres, PHP and OPENVPN installed. 
+  Files on folder "iot_github" must be placed in the raspberry´s folder "www/html". Where the apache files are!  
+  
+  ESP8266 (ESP1) will control the relays (1, 2 or 4 versions) by commands from "its webserver" running it self and acess by browser or from HEX commands or STRING commands from PHP installed in Raspberry.
+  
+  It was tested in LC Tech solutions.
 
 # Usage:
-
+  Control remote of switches.
+  
 # Screenshot:
 
 # Credits and licenses:

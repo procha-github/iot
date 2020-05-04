@@ -14,7 +14,7 @@ With or without Nuvoton (command sent in HEX or STRING by PHP)
   It was tested in LC Tech solutions.
 
 # Usage:
-  Control remote of switches.
+  Control remote of switches/relays.
   
 # Screenshot:
 

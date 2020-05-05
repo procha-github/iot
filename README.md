@@ -35,4 +35,8 @@ https://www.php.net/
 
 https://www.w3schools.com/
 
+https://jquery.org/
+
+http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+
 # Issues and suggestions:

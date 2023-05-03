@@ -28,8 +28,8 @@ String header;
 String RELAYState = "off";
 
 //string from PHP
-String s_on = "ESP062_1_ON"; //the same message form PHP file
-String s_off = "ESP062_1_OFF"; //the same message form PHP file
+String s_on = "ESP_1_ON"; //the same message form PHP file
+String s_off = "ESP_1_OFF"; //the same message form PHP file
 
 void setup() {
   Serial.begin(115200);
@@ -53,7 +53,7 @@ void setup() {
   ArduinoOTA.setPort(8266);
 
   // Hostname defaults to esp8266-[ChipID]
-  ArduinoOTA.setHostname("esp63");
+  ArduinoOTA.setHostname("esp");
 
   // No authentication by default
   ArduinoOTA.setPassword("admin");

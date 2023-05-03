@@ -412,7 +412,7 @@ function RELAY_1_ON_FUNC_STRING(){
 
     echo "Connection established \n";
     //Is this proper representation of the message to esp8266 
-    $message = "ESP062_1_ON";
+    $message = "ESP_1_ON";
 
     //Send the message to the server
     if( ! socket_send ( $sock , $message, strlen($message) , 0))
@@ -449,7 +449,7 @@ function RELAY_1_OFF_FUNC_STRING(){
 
     echo "Connection established \n";
     //Is this proper representation of the message to esp8266 
-    $message = "ESP062_1_OFF";
+    $message = "ESP_1_OFF";
 
     //Send the message to the server
     if( ! socket_send ( $sock , $message, strlen($message) , 0))
@@ -485,7 +485,7 @@ function RELAY_2_ON_FUNC_STRING(){
 
     echo "Connection established \n";
     //Is this proper representation of the message to esp8266 
-    $message = "ESP062_2_ON";
+    $message = "ESP_2_ON";
 
     //Send the message to the server
     if( ! socket_send ( $sock , $message, strlen($message) , 0))
@@ -522,7 +522,7 @@ function RELAY_2_OFF_FUNC_STRING(){
 
     echo "Connection established \n";
     //Is this proper representation of the message to esp8266 
-    $message = "ESP062_2_OFF";
+    $message = "ESP_2_OFF";
 
     //Send the message to the server
     if( ! socket_send ( $sock , $message, strlen($message) , 0))

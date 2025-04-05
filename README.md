@@ -7,7 +7,7 @@ With or without Nuvoton (command sent in HEX or STRING by PHP)
 
 Add the option to use Arduino Cloud
 
-Add mariaDB to save the operations is esps. It is by php or direct from esp code.
+Add mariaDB to save the operations in esps. It is done by php or direct from esp code.
 
 
 # Instalation:
